@@ -3,11 +3,13 @@ import './index.scss';
 import Headermenu from '../components/Headermenu/Headermenu'
 import Organizador from '../components/organizador/Organizador';
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <div className='home'> 
-    <Headermenu />
-    <Organizador />
+      <Headermenu />
+      <div className="home__organizador">
+      <Organizador key={data.id} data={data}/>
+      </div>
     </div>
   )
 }
