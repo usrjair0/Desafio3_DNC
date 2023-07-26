@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.scss'
-import Headermenu from './components/Headermenu';
+import Home from './views/Home';
+import {TAREFAS} from '../src/mock/Tarefas.mock'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: < Headermenu />,
+    element: <Home data={TAREFAS}/>,
   },
 ]);
 
