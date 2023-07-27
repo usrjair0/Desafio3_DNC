@@ -7,7 +7,7 @@ import some from '../../assets/some.svg';
 import squareClicked from '../../assets/squareClicked.svg'
 
 const Organizador = ({data}) => {
-    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array//
     const [taskImages, setTaskImages] = useState(Array(data.length).fill(false)); //o fill preenche tudo com false.
     const handleImageClick = (index) => {
     const newTaskImages = [...taskImages];
@@ -17,21 +17,24 @@ const Organizador = ({data}) => {
   return (
     <main className='main'>
         <h2>Otimize seu tempo e se organize com o nosso Planejador Diário.</h2>
+        <div className="containertable">
         <table className='main__table'>
-            <thead className='main__table main__table--head'>
-                <th>Tarefa</th>
-                <th>Status</th>
-                <th>Opções</th>
+            <thead className='main__thead'>
+                <tr>
+                    <th className='main__item'>Tarefa</th>
+                    <th className='main__item'>Status</th>
+                    <th className='main__item'>Opções</th>
+                </tr>
             </thead>
-            <tbody id='tbody'> 
+            <tbody className='main__tbody'> 
             {data.map((task, index) => (
                 <tr key={index}>
-                    <td>{task.description}</td>
+                    <td>{task.title}</td>
                     <td>
-                        {isSquareClicked ? (
-                            <img src={squareClicked} onClick={handleisSquareClicked} width={15}/>
-                        ):(
-                            <img src={square} onClick={handleisSquareClicked} width={15}/> 
+                        {taskImages[index] ? (
+                        <img src={squareClicked} onClick={() => handleImageClick(index)} width={15} />
+                        ) : (
+                        <img src={square} onClick={() => handleImageClick(index)} width={15} />
                         )}
                     </td> 
                     <td>
@@ -41,7 +44,7 @@ const Organizador = ({data}) => {
                 </tr>
             ))}
             </tbody> 
-            <tfoot>
+            <tfoot className='main__tfoot'>
                 <tr>
                     <td>Nova tarefa...</td>
                     <td></td>
@@ -49,6 +52,7 @@ const Organizador = ({data}) => {
                 </tr>
             </tfoot>
         </table>
+        </div>
     </main>
   )
 }

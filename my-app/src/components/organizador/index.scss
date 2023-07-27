@@ -1,7 +1,25 @@
+.containertable{
+    display: flex;
+    justify-content: center;
+}
 .main{
     color: white;
     background-color: #2D2D2D;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 7%;
+    &__table{
+        margin-top: 40px;
+    }
+    &__table tr{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__thead tr{
+    font-size: 1.2rem; 
+    border-bottom: 2px solid white;
+    }
 }
