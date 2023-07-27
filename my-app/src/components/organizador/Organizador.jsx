@@ -17,10 +17,9 @@ const Organizador = ({data}) => {
   return (
     <main className='main'>
         <h2>Otimize seu tempo e se organize com o nosso Planejador Diário.</h2>
-        <div className="containertable">
         <table className='main__table'>
             <thead className='main__thead'>
-                <tr>
+                <tr className='main__tr'>
                     <th className='main__item'>Tarefa</th>
                     <th className='main__item'>Status</th>
                     <th className='main__item'>Opções</th>
@@ -30,14 +29,14 @@ const Organizador = ({data}) => {
             {data.map((task, index) => (
                 <tr key={index}>
                     <td>{task.title}</td>
-                    <td>
+                    <td className='main__square'>
                         {taskImages[index] ? (
                         <img src={squareClicked} onClick={() => handleImageClick(index)} width={15} />
                         ) : (
                         <img src={square} onClick={() => handleImageClick(index)} width={15} />
                         )}
                     </td> 
-                    <td>
+                    <td className='main__images'>
                         <img src={pencil} width={20}/>
                         <img src={trash} width={20}/>
                     </td>
@@ -52,7 +51,6 @@ const Organizador = ({data}) => {
                 </tr>
             </tfoot>
         </table>
-        </div>
     </main>
   )
 }

@@ -1,7 +1,3 @@
-.containertable{
-    display: flex;
-    justify-content: center;
-}
 .main{
     color: white;
     background-color: #2D2D2D;
@@ -10,16 +6,31 @@
     align-items: center;
     justify-content: center;
     padding: 7%;
-    &__table{
+    &__tr {
+        padding: 0 0;
+        border-bottom: 1px solid white;
+    }
+    &__table {
         margin-top: 40px;
     }
-    &__table tr{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &__thead tr {
+        font-size: 1.2rem; 
+        border-bottom: 2px solid white;
     }
-    &__thead tr{
-    font-size: 1.2rem; 
-    border-bottom: 2px solid white;
+    &__thead th:nth-child(1){
+        text-align: left;
+    }
+    &__thead th:nth-child(3){
+        text-align: right;
+    }
+    &__item {
+        width: 190px;
+    }
+    &__square{
+        text-align: center;
+    }
+    &__images{
+        display: flex;
+        justify-content: end;
     }
 }
