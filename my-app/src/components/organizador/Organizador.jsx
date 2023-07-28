@@ -6,6 +6,7 @@ import square from '../../assets/square.svg';
 import some from '../../assets/some.svg';
 import squareClicked from '../../assets/squareClicked.svg'
 
+
 const Organizador = ({data}) => {
     //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array//
     const [taskImages, setTaskImages] = useState(Array(data.length).fill(false)); //o fill preenche tudo com false.
@@ -20,9 +21,9 @@ const Organizador = ({data}) => {
         <table className='main__table'>
             <thead className='main__thead'>
                 <tr className='main__tr'>
-                    <th className='main__item'>Tarefa</th>
-                    <th className='main__item'>Status</th>
-                    <th className='main__item'>Opções</th>
+                    <td className='main__item'>Tarefa</td>
+                    <td className='main__item'>Status</td>
+                    <td className='main__item'>Opções</td>
                 </tr>
             </thead>
             <tbody className='main__tbody'> 

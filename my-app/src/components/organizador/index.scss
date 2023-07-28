@@ -1,4 +1,17 @@
+thead {
+    display: flex;
+}
+tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+tfoot tr {
+    display: flex;
+    justify-content: space-between;
+}
 .main{
+    height: 100vh;
+    font-weight: 300;
     color: white;
     background-color: #2D2D2D;
     display: flex;
@@ -6,29 +19,40 @@
     align-items: center;
     justify-content: center;
     padding: 7%;
-    &__tr {
-        padding: 0 0;
-        border-bottom: 1px solid white;
-    }
     &__table {
         margin-top: 40px;
     }
-    &__thead tr {
+    &__thead td {
         font-size: 1.2rem; 
+    }
+
+    &__tr {
+        border-color: white !important;
+        border-bottom-color: white !important;
         border-bottom: 2px solid white;
     }
-    &__thead th:nth-child(1){
+
+    &__thead td:nth-child(1){
         text-align: left;
     }
-    &__thead th:nth-child(3){
+
+    &__thead td:nth-child(2){
+        text-align: center;
+    }
+
+    &__thead td:nth-child(3){
         text-align: right;
     }
+
     &__item {
         width: 190px;
     }
+
     &__square{
-        text-align: center;
+        position: absolute;
+        left: 49%;
     }
+
     &__images{
         display: flex;
         justify-content: end;

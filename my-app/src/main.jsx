@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.scss'
-import Home from './views/Home';
+import Home from './views/Home/Home';
 import { TAREFAS } from '../src/mock/Tarefas.mock'
 
 const router = createBrowserRouter([
