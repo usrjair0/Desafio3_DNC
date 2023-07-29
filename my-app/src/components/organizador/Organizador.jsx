@@ -6,7 +6,7 @@ import square from '../../assets/square.svg';
 import some from '../../assets/some.svg';
 import squareClicked from '../../assets/squareClicked.svg'
 
-const Organizador = ({ data, opnImg }) => {
+const Organizador = ({ data, opnpen, opntrash }) => {
     //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array//
     const [taskImages, setTaskImages] = useState(Array(data.length).fill(false)); //o fill preenche tudo com false.
     const handleImageClick = (index) => {
@@ -38,8 +38,8 @@ const Organizador = ({ data, opnImg }) => {
                         )}
                     </td> 
                     <td className='main__images'>
-                        <img src={pencil} onClick={opnImg} width={20}/>
-                        <img src={trash} onClick={opnImg} width={20}/>
+                        <img src={pencil} onClick={opnpen} width={20}/>
+                        <img src={trash} onClick={opntrash} width={20}/>
                     </td>
                 </tr>
             ))}

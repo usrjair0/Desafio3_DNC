@@ -3,11 +3,15 @@ thead {
 }
 tbody tr {
     display: flex;
+    padding: 5px;
     justify-content: space-between;
 }
 tfoot tr {
     display: flex;
     justify-content: space-between;
+}
+table {
+    font-size: 1.2rem;
 }
 .main{
     height: 100vh;
@@ -19,6 +23,10 @@ tfoot tr {
     align-items: center;
     justify-content: center;
     padding: 7%;
+    h2{
+        position: relative;
+        top: 3%;
+    }
     &__table {
         font-weight: 300;
         margin-top: 40px;
