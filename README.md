@@ -36,7 +36,7 @@ Aplicação desenvolvida para listar e visualizar tarefas, com o objetivo de col
 
 ```
 # clone esse repositório
-$ git clone https://github.com/felipejsborges/Desafio3_DNC.git
+$ git clone https://github.com/usrjair0/Desafio3_DNC.git
 
 # acesse a pasta do projeto
 $ cd my-app
