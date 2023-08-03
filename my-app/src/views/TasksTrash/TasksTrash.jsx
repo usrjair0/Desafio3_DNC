@@ -1,5 +1,5 @@
 import React from 'react'
-import CardMenutrash from '../../components/CardMenu2/CardMenutrash'
+import CardMenu from '../../components/CardMenu/CardMenu'
 import Headermenu from '../../components/Headermenu/Headermenu'
 import { useParams } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const TasksTrash = ({ data }) => {
   return (
     <div>
         <Headermenu />
-        <CardMenutrash data={taskstrashselected}/>
+        <CardMenu data={taskstrashselected} type='excluir'/>
     </div>
   )
 }
