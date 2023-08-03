@@ -60,10 +60,19 @@ table {
     &__square{
         position: absolute;
         left: 49%;
+        cursor: pointer;
     }
 
     &__images{
         display: flex;
         justify-content: end;
+    }
+    &__tfoot{
+        tr{
+            padding: 5px;
+        }
+        img {
+            cursor: pointer;
+        }
     }
 }

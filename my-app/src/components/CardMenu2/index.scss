@@ -36,11 +36,22 @@
         width: 400px;
     }
     &__button--blue {
+        width: 180px !important;
         background-color: #0C70F2;
         color: white;
+        transition-duration: 0.5s;
+        &:hover {
+            transform: translateY(-5px);
+            transition-duration: 0.5s;
+        }
     }
     &__button--white {
+        width: 200px;
         background-color: white;
         color: #2D2D2D;
-    }
+        &:hover {
+            transform: translateY(-5px);
+            transition-duration: 0.5s;
+        }
+    } 
 }

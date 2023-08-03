@@ -10,8 +10,8 @@ const CardMenutrash = ({ data }) => {
         <h2>Deseja excluir esse item?</h2>
         <p>{data.description}oi</p>
         <div className='Card__button'>
-          <Link to={"/"}><button className='Card__button Card__button--blue'>Não</button></Link>
-          <button className='Card__button Card__button--white'>Sim</button>
+          <Link to={"/"}><button type='submit' className='Card__button Card__button--blue'>Não</button></Link>
+          <button type='submit' className='Card__button Card__button--white'>Sim</button>
         </div>
       </div>
     </div>

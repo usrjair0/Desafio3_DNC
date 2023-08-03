@@ -49,7 +49,6 @@ const Organizador = ({ data }) => {
             <tfoot className='main__tfoot'>
                 <tr>
                     <td>Nova tarefa...</td>
-                    <td></td>
                     <td><img src={some}/></td>
                 </tr>
             </tfoot>

@@ -13,5 +13,5 @@ export const TAREFAS = [
     { "id": 7, "title": "Almoçar", "description": "Preparar a comida para a janta", "completed": false },
     { "id": 8, "title": "Jogar volei", "description": "Ir a quadra para jogar volei com os amigos", "completed": true },
     { "id": 9, "title": "Estudar programação", "description": "Entrar na plataforma dos alunos para estudar", "completed": false },
-    { "id": 10, "title": "shopping", "description": "Fazer algumas compras no shopping", "completed": true }
+    { "id": 10, "title": "shopping", "description": "Fazer algumas compras no shopping", "completed": true },
   ]
