@@ -5,14 +5,16 @@ import trash from '../../assets/trash.svg';
 import square from '../../assets/square.svg';
 import some from '../../assets/some.svg';
 import squareClicked from '../../assets/squareClicked.svg'
+import { Link } from 'react-router-dom';
 
-const Organizador = ({ data, opnpen, opntrash }) => {
+const Organizador = ({ data }) => {
     //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array//
     const [taskImages, setTaskImages] = useState(Array(data.length).fill(false)); //o fill preenche tudo com false.
     const handleImageClick = (index) => {
     const newTaskImages = [...taskImages];
     newTaskImages[index] = !newTaskImages[index]; //estou invertendo o valor do index, da imagem
     setTaskImages(newTaskImages);
+    console.log(taskImages)
   };
 
   return (
@@ -38,8 +40,8 @@ const Organizador = ({ data, opnpen, opntrash }) => {
                         )}
                     </td> 
                     <td className='main__images'>
-                        <img src={pencil} onClick={opnpen} width={20}/>
-                        <img src={trash} onClick={opntrash} width={20}/>
+                        <Link to={`/taskspen/${index+1}`}><img src={pencil} key={index} width={20}/></Link>
+                        <Link to={`/taskstrash/${index+1}`}><img src={trash} key={index} width={20}/></Link>
                     </td>
                 </tr>
             ))}

@@ -1,15 +1,16 @@
 import React from 'react';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
-const CardMenupen = ({ data, onClose }) => {
+const CardMenupen = ({ data }) => {
   return (
     <div className='CardMenupen'>
       <h2>Otimize seu tempo e se organize com o nosso Planejador Diário.</h2>
         <div className='Card'>
           <h2>Deseja editar esse item?</h2>
-          <p>{data.description}oi</p>
+          <p>{data.description}</p>
           <div className='Card__button'>
-            <button className='Card__button Card__button--blue' onClick={onClose}>Não</button>
+            <Link to={"/"}><button className='Card__button Card__button--blue'>Não</button></Link>
             <button className='Card__button Card__button--white'>Sim</button>
           </div>
         </div>
