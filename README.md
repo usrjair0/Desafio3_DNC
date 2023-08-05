@@ -14,7 +14,7 @@
 <hr>
 
 <h4>Descrição 📄</h4>
-
+Link do site: https://desafio3-dnc.vercel.app/ <br/>
 Aplicação desenvolvida para listar e visualizar tarefas, com o objetivo de colocar em práticas a biblioteca de desenvolvimento de interfaces React JS.
 
 <hr>
