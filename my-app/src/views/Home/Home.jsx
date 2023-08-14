@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./index.scss";
 import Headermenu from "../../components/Headermenu/Headermenu";
 import Organizador from "../../components/organizador/Organizador";
